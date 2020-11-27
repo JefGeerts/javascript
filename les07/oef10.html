@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    let getal1 = prompt('Geef het eerste getal');
+    let getal2 = prompt("Geef het tweede getal");
+    let getallen = nummer(getal1, getal2);
+
+    function nummer(g1, g2) {
+        if (g1 < g2) {
+            return "Kleiner dan"
+        } else if (g1 == g2) {
+            return "Gelijk aan"
+        } else {
+            return "Groter dan"
+        }
+    }
+
+    document.write(`<p>${getal1} is ${getallen} ${getal2}<p/>`);
+    </script>
+</body>
+
+</html>

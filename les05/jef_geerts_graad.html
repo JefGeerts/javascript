@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let cijfer = prompt('wat is de score?');
+		if (cijfer == null){
+			document.write("u heeft geannuleerd!");
+		}
+		else if (cijfer.length == 0){
+			document.write("u heeft niets ingegeven!");
+		}
+		else if (isNaN(cijfer)) {
+			document.write("Dit is geen nummer.");
+		}
+		else if (cijfer.length != 2){
+			document.write(" Geef de punten in met 2 cijfers!");
+		}
+		else if (cijfer >= 95){
+			alert("Uw graad is: A+");
+		}
+		else if (cijfer >= 90){
+			alert("Uw graad is: A");
+		}
+		else if (cijfer >= 80){
+			alert("Uw graad is: B");
+		}
+		else if (cijfer >= 70){
+			alert("Uw graad is: C");
+		}
+		else if (cijfer >= 60){
+			alert("Uw graad is: D");
+		}
+		else if (cijfer >= 50){
+			alert("Uw graad is: E");
+		}
+		else {
+			alert("Uw graad is: F");
+		}
+
+
+
+
+
+
+	</script>
+</body>
+</html>

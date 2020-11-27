@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    //oefening maanden
+    let maanden = ["januari", "februari", "maart"];
+    maanden[3] = "april";
+    maanden[4] = "mei";
+    maanden[5] = "juni";
+    maanden.push("juli");
+    maanden.push("augustus", "september", "oktober", "november", "december");
+    document.write(`<p>${maanden}</p>`);
+    document.write(`<p>Er zijn ${maanden.length} maanden in de array.</p>`);
+    let positieMarch = maanden.indexOf("March");
+    document.write(`<p>De maand "March" bevindt zich in de array op positie: ${positieMarch}</p>`);
+
+    //oefening namen
+    let namen = ["Erik", "Sofie", "Adam", "Zorro"];
+    namen.sort();
+    document.write(`<p>De gesorteerde namen zijn: ${namen}</p>`);
+    let zoeken = prompt('welke naam wil u zoeken?');
+    let positienaam = namen.indexOf(`${zoeken}`);
+    document.write(`<p> De naam ${zoeken} bevindt zich op positie: ${positienaam} </p>`);
+
+    //oefening gebruiker
+    let volledigenaam = prompt('wat is uw volledige naam?');
+    let arraynaam = volledigenaam.split(" ");
+    arraynaam.reverse();
+    let naamstring = arraynaam.join(" ");
+    document.write(`<p>Jouw naam genoteerd als familienaam voornaam is: ${naamstring}</p>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arrays</title>
+</head>
+<body>
+	<script>
+	let scores = [];
+	//of
+	let namen = new Array();
+
+	scores [0] = 39;
+	scores [1] = 40;
+	scores [2] = 100;
+	scores [3] = 49;
+	//of
+	let seizoenen = new Array("winter", "lente", "zomer", "herfst");
+
+	//of
+	let scriptingtalen = ["Javascript", "PHP"];
+
+	document.write(`
+		<p>${scores}</p>
+		<p>${seizoenen}</p>
+		<p>${scriptingtalen}</p>
+		`)
+
+	let afmeting = [20, 33, 40];
+	let getal1 = afmeting[0];
+	let getal2 = afmeting[1];
+	document.write(`<p> ${getal1} ${getal2} </p>`);
+
+	scores.push(20);
+	document.write(`<p> ${scores} </p>`);
+
+	</script>
+</body>
+</html>

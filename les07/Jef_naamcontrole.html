@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naamcontrole</title>
+</head>
+
+<body>
+    <script>
+    let fout = false
+    //Voornaam
+    let voornaam = prompt("Wat is je voornaam?");
+    let naam1 = controle(voornaam);
+
+    function controle(ontvangen) {
+        if (ontvangen == null) {
+            fout = true;
+            document.write(`<p>U heeft geannuleerd.</p>`);
+        } else if (ontvangen.length == 0) {
+            fout = true;
+            document.write(`<p>U heeft niets ingegeven.</p>`);
+        } else if (ontvangen.length < 2) {
+            fout = true;
+            document.write(`<p>Geef minimum 2 letters in.</p>`);
+        } else {
+            return ontvangen.charAt(0).toUpperCase() + ontvangen.slice(1);
+        }
+    }
+    
+    //achternaam
+
+    if (fout == false) {
+        let achternaam = prompt("Wat is je achternaam?");
+        let naam2 = controle(achternaam);
+
+        if (fout==false){
+        document.write(`<p>Hallo ${naam1} ${naam2}</p>`)
+        }
+    }
+    console.log(`Fout = ${fout}`);
+    </script>
+</body>
+
+</html>
