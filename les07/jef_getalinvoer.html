@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    "use strict";
+    let getallen = new Array();
+    let aantal = prompt('Hoeveel getallen wil je ingeven?');
+    aantal = controleAantal(aantal);
+
+    function controleAantal(ontvangen) {
+        if (ontvangen == null) {
+            document.write(`<p>U heeft geannuleerd.</p>`);
+            return 0;
+        } else if (ontvangen.length == 0) {
+            document.write(`<p>U heeft niets ingegeven.</p>`);
+            return 0;
+        } else if (isNaN(aantal)) {
+            document.write("Dit is geen correcte ingave.");
+            return 0;
+        } else {
+            return ontvangen;
+        }
+    }
+
+    
+    </script>
+</body>
+
+</html>
